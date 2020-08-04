@@ -1,0 +1,89 @@
+@import '~antd/dist/antd.less';
+
+.wrapper {
+  width: 400px;
+  height: 282px;
+  overflow: hidden;
+  padding: 12px;
+  background-color: #f0f0f0;
+
+  .ant-space {
+    margin-bottom: 8px;
+
+    .ant-btn {
+      height: 30px;
+      padding: 3px 10px;
+    }
+  }
+
+  .ant-table-wrapper {
+    .ant-table {
+      height: 192px;
+      margin-bottom: 8px;
+      background-color: transparent;
+
+      .ant-table-container {
+        background-color: #ffffff;
+      }
+
+      .ant-table-thead {
+        th {
+          padding: 8px;
+        }
+      }
+
+      .ant-table-tbody {
+        td {
+          padding: 14px 8px;
+
+          &:hover {
+            .editable-cell {
+              height: 22px;
+              line-height: 20px;
+              border: 1px solid #d9d9d9;
+              border-radius: 4px;
+            }
+          }
+
+          .ant-form-item {
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: calc(100% - 6px);
+
+            .ant-form-item-control-input {
+              min-height: auto;
+
+              .ant-input {
+                padding: 2px 8px;
+              }
+            }
+
+
+            .ant-form-item-explain {
+              height: 14px;
+              min-height: 14px;
+              font-size: 12px;
+            }
+          }
+
+          >div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .delete {
+            cursor: pointer;
+            color: #1890ff;
+          }
+        }
+      }
+    }
+
+    .ant-pagination {
+      margin: 0
+    }
+  }
+}
